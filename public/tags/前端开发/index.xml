@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>前端开发 on GISerWu的博客</title>
+    <link>https://giserwu.top/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 前端开发 on GISerWu的博客</description>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 15 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://giserwu.top/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WebGIS入门指南：从零开始学习地理信息系统开发</title>
+      <link>https://giserwu.top/posts/webgis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://giserwu.top/posts/webgis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;随着互联网技术的飞速发展，地理信息系统（GIS）已经从传统的桌面应用扩展到了Web平台。WebGIS作为GIS技术与Web技术的结合，为我们提供了在浏览器中展示、分析和处理地理空间数据的能力。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

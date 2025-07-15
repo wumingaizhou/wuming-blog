@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>我的博客</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on 我的博客</description>
+    <title>GISerWu的博客</title>
+    <link>https://giserwu.top/</link>
+    <description>Recent content on GISerWu的博客</description>
     <generator>Hugo -- 0.148.0</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 09 Jul 2025 19:49:32 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 15 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://giserwu.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Wed, 09 Jul 2025 19:49:32 +0800</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description></description>
+      <title>WebGIS入门指南：从零开始学习地理信息系统开发</title>
+      <link>https://giserwu.top/posts/webgis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://giserwu.top/posts/webgis%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;随着互联网技术的飞速发展，地理信息系统（GIS）已经从传统的桌面应用扩展到了Web平台。WebGIS作为GIS技术与Web技术的结合，为我们提供了在浏览器中展示、分析和处理地理空间数据的能力。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于我</title>
+      <link>https://giserwu.top/about/</link>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://giserwu.top/about/</guid>
+      <description>&lt;h2 id=&#34;你好我是giserwu&#34;&gt;你好，我是GISerWu&lt;/h2&gt;
+&lt;p&gt;一名热爱&lt;strong&gt;地理信息系统(GIS)&lt;strong&gt;和&lt;/strong&gt;WebGIS开发&lt;/strong&gt;的技术爱好者。&lt;/p&gt;
+&lt;h3 id=&#34;我的技术栈&#34;&gt;我的技术栈&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;前端开发&lt;/strong&gt;: JavaScript, Vue.js, React, HTML5, CSS3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GIS技术&lt;/strong&gt;: ArcGIS API for JavaScript, OpenLayers, Leaflet, Mapbox GL JS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;空间数据库&lt;/strong&gt;: PostgreSQL/PostGIS, MongoDB&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;后端技术&lt;/strong&gt;: Node.js, Express, Python&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;开发工具&lt;/strong&gt;: Git, VS Code, WebStorm&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;云服务&lt;/strong&gt;: AWS, 阿里云, 腾讯云&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;博客内容&#34;&gt;博客内容&lt;/h3&gt;
+&lt;p&gt;在这个博客里，我会分享：&lt;/p&gt;</description>
     </item>
     <item>
       <title>你好，世界！</title>
-      <link>http://localhost:1313/posts/hello-world/</link>
-      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description>&lt;p&gt;这是我的第一篇博客文章！&lt;/p&gt;
-&lt;h2 id=&#34;标题&#34;&gt;标题&lt;/h2&gt;
-&lt;p&gt;这里是正文内容&amp;hellip;&lt;/p&gt;
-&lt;h3 id=&#34;子标题&#34;&gt;子标题&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;列表项 1&lt;/li&gt;
-&lt;li&gt;列表项 2&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <link>https://giserwu.top/posts/hello-world/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://giserwu.top/posts/hello-world/</guid>
+      <description>&lt;p&gt;这是我的第一篇博客文章！&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

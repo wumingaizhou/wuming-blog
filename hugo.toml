@@ -1,86 +1,214 @@
-baseURL = "https://example.com"
-title = "我的博客"
+baseURL = "https://giserwu.top"
+title = "GISerWu的博客"
 theme = "PaperMod"
-[pagination]
-pagerSize = 5
 enableRobotsTXT = true
+enableInlineShortcodes = true
+enableGitInfo = true
+
+# 语言设置
+languageCode = "zh-cn"
+defaultContentLanguage = "zh"
+hasCJKLanguage = true
+
+# 构建设置
 buildDrafts = false
 buildFuture = false
 buildExpired = false
+timeout = "180s"
 
+# 分页设置
+[pagination]
+  pagerSize = 10
+
+# 输出格式：启用 JSON 以支持搜索功能
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "RSS"]
+  section = ["HTML", "RSS", "JSON"]
+
+# 最小化输出
 [minify]
-disableXML = true
-minifyOutput = true
+  disableXML = true
+  minifyOutput = true
 
+# 标记设置
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+    lineNos = true
+    lineNumbersInTable = true
+    tabWidth = 4
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+    ordered = false
+
+# ========== 站点参数 ==========
 [params]
-env = "production"
-title = "我的小天地"
-description = "分享生活，记录成长"
-keywords = ["Blog", "Portfolio", "PaperMod"]
-author = "你的名字"
-DateFormat = "2006-01-02"
-defaultTheme = "auto"
-ShowReadingTime = true
-ShowShareButtons = true
-ShowPostNavLinks = true
-ShowBreadCrumbs = true
-ShowCodeCopyButtons = true
-ShowWordCount = true
-ShowRssButtonInSectionTermList = true
-UseHugoToc = true
-disableSpecial1stPost = false
-disableScrollToTop = false
-comments = false
-hidemeta = false
-hideSummary = false
-showtoc = true
-tocopen = false
+  env = "production"
+  title = "GISerWu的技术博客"
+  description = "GIS、WebGIS、编程技术分享与记录 - 专注于地理信息系统、前端开发、技术学习"
+  keywords = ["GIS", "WebGIS", "JavaScript", "Vue", "编程", "技术博客", "地理信息系统", "前端开发"]
+  author = "GISerWu"
+  DateFormat = "2006-01-02"
+  defaultTheme = "auto"
 
+  # 页面信息显示
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  showtoc = true
+  tocopen = true
+  autoCollapseToc = false
+
+  # 页面交互控制
+  ShowShareButtons = true
+  comments = true
+  disableScrollToTop = false
+  disableSpecial1stPost = false
+  hidemeta = false
+  hideSummary = false
+  editPostURL = "https://github.com/wumingaizhou/blog-content/tree/main/content"
+  ShowLastMod = true
+  ShowToc = true
+
+  # 搜索功能
+  ShowSearch = true
+  searchResultPosition = "main"
+
+  # 文章封面设置
+  [params.cover]
+    responsiveImages = true
+    linkFullImages = false
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+  # 主页设置
+  [params.homeInfoParams]
+    Title = "欢迎来到GISerWu的技术博客"
+    Content = "这里是GISerWu的个人技术空间，主要分享GIS、WebGIS、前端开发、编程技术等相关内容。希望我的学习历程和经验分享能对你有所帮助。"
+
+# ========== 首页个人简介模式 ==========
 [params.profileMode]
-enabled = false
-title = "我的博客"
-subtitle = "欢迎访问我的博客"
-imageUrl = "#"
-imageWidth = 120
-imageHeight = 120
-imageTitle = "profile image"
+  enabled = true
+  title = "GISerWu"
+  subtitle = "GIS & WebGIS开发者 | 技术分享者"
+  imageUrl = "/data/face.png"
+  imageWidth = 150
+  imageHeight = 150
+  imageTitle = "GISerWu"
 
-[[params.profileMode.buttons]]
-name = "文章"
-url = "posts"
+  [[params.profileMode.buttons]]
+    name = "📚 技术文章"
+    url = "posts"
 
-[[params.profileMode.buttons]]
-name = "标签"
-url = "tags"
+  [[params.profileMode.buttons]]
+    name = "🏷️ 文章标签"
+    url = "tags"
+
+  [[params.profileMode.buttons]]
+    name = "📂 文章归档"
+    url = "archives"
+
+# ========== 社交链接 ==========
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/wumingaizhou"
 
 [[params.socialIcons]]
-name = "github"
-url = "https://github.com/yourusername"
+  name = "email"
+  url = "mailto:wumingaizhou@example.com"
 
 [[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com/yourusername"
+  name = "rss"
+  url = "/index.xml"
+
+# ========== 顶部导航菜单 ==========
+[[menu.main]]
+  identifier = "categories"
+  name = "分类"
+  url = "/categories/"
+  weight = 10
 
 [[menu.main]]
-identifier = "categories"
-name = "分类"
-url = "/categories/"
-weight = 10
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 20
 
 [[menu.main]]
-identifier = "tags"
-name = "标签"
-url = "/tags/"
-weight = 20
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 30
 
 [[menu.main]]
-identifier = "archives"
-name = "归档"
-url = "/archives/"
-weight = 30
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 40
 
 [[menu.main]]
-identifier = "search"
-name = "搜索"
-url = "/search/"
-weight = 40
+  identifier = "about"
+  name = "关于"
+  url = "/about/"
+  weight = 50
+
+# ========== 评论系统配置 ==========
+[params.giscus]
+  repo = "wumingaizhou/blog-comments"
+  repoID = "R_kgDO..."
+  category = "General"
+  categoryID = "DIC_kwDO..."
+  mapping = "pathname"
+  theme = "preferred_color_scheme"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "bottom"
+  lang = "zh-CN"
+
+# ========== 分析统计 ==========
+[params.analytics.google]
+  SiteVerificationTag = "your-google-site-verification"
+
+[params.analytics.yandex]
+  YandexMetrika = "your-yandex-metrika-id"
+
+[params.analytics.bing]
+  SiteVerificationTag = "your-bing-site-verification"
+
+# ========== 站点地图配置 ==========
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# ========== 隐私政策 ==========
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    disable = false
+    respectDoNotTrack = true
+  [privacy.instagram]
+    disable = false
+    simple = true
+  [privacy.vimeo]
+    disable = false
+    enableDNT = true
+    simple = true
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
+

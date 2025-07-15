@@ -1,0 +1,35 @@
+<!-- 自定义页脚扩展 -->
+<script>
+  // 回到顶部按钮优化
+  document.addEventListener('DOMContentLoaded', function() {
+    const scrollTopBtn = document.querySelector('#scroll-to-top');
+    if (scrollTopBtn) {
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          scrollTopBtn.style.display = 'block';
+        } else {
+          scrollTopBtn.style.display = 'none';
+        }
+      });
+    }
+  });
+
+  // 代码复制功能增强
+  document.addEventListener('DOMContentLoaded', function() {
+    const copyButtons = document.querySelectorAll('.copy-code');
+    copyButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const code = this.parentElement.querySelector('code');
+        if (code) {
+          navigator.clipboard.writeText(code.textContent).then(() => {
+            const originalText = this.textContent;
+            this.textContent = '已复制!';
+            setTimeout(() => {
+              this.textContent = originalText;
+            }, 2000);
+          });
+        }
+      });
+    });
+  });
+</script>
